@@ -6,6 +6,7 @@ body {
   font-family: "Arial", sans-serif;
   overflow-x: hidden;
 }
+
 /* HEADER */
 /*LOGO */
 .navbar {
@@ -19,8 +20,6 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
 /* Main content wrapper */
 .main-wrapper {
   background: linear-gradient(135deg, rgb(208, 237, 167) 50%, rgb(7, 72, 50) 100%);
@@ -28,8 +27,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
-
 
 .navbar-brand img {
   height: 40px;
@@ -43,12 +40,14 @@ body {
   transition: 0.3 color;
   width: 80px;
 }
+
 /*SEARCH */
 .form-control {
   border-width: 3px;
   border-color: rgb(208, 237, 167);
   border-radius: 5px;
 }
+
 .btn-outline-success {
   background-color: rgb(208, 237, 167);
   color: black;
@@ -58,27 +57,33 @@ body {
   text-decoration: none;
   transition: 0.3s background-color;
 }
+
 .btn-outline-success:hover {
   background-color: rgb(10, 81, 57);
 }
+
 .btn-outline-success {
   border: none;
   font-size: 1.25rem;
 }
+
 .btn-outline-success:focus .btn-close:focus {
   box-shadow: none;
   outline: none;
 }
+
 /*----navbar About---*/
 .nav-link {
   color: rgb(0, 0, 0);
   font-weight: 500;
   position: relative;
 }
+
 .nav-link:hover,
 .nav-link.active {
   color: #e8e4e4;
 }
+
 .nav-link::before {
   content: "";
   position: absolute;
@@ -91,6 +96,7 @@ body {
   visibility: hidden;
   transition: 0.3 ease-in-out;
 }
+
 .nav-link:hover:before {
   width: 100%;
   visibility: visible;
@@ -98,7 +104,7 @@ body {
 
 /* Hero section styling */
 .hero-section {
-  background: url(/UAS_AIK/img/masjidil_haram.jpg) no-repeat center;
+  background: url(./img/masjidil_haram.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
   height: 55vh;
@@ -115,8 +121,6 @@ body {
   bottom: 0;
   left: 0;
 }
-
-
 
 /* Main content styling */
 main {
@@ -145,63 +149,70 @@ main {
   padding-bottom: 10px;
   border-radius: 25px;
 }
+
 .container {
   padding: 50px;
   position: relative;
   z-index: 2;
 }
+
 .container-fluid {
   position: relative;
   z-index: 2;
 }
+
 .card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.card-img-container {
-  height: 200px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
   overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  background-color: rgb(121, 133, 104);
-  transition: all 0.3s ease;
+  flex-direction: column;
+  padding: 0;
 }
 
-.card-img-container:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+.card-img-container {
+  background: #818c71;
+  height: 170px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
 }
 
 .card-img-top {
-  max-width: 100%;
-  max-height: 100%;
+  max-height: 140px;
   width: auto;
-  height: auto;
+  max-width: 100%;
   object-fit: contain;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.card-img-top:hover {
-  transform: scale(1.1);
-  filter: brightness(1.1);
+  display: block;
+  margin: 0 auto;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 .card-body {
-  flex: 2;
+  background: #fff;
+  padding: 28px 18px 18px 18px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
 .card-text-content {
   flex: 2;
 }
+
 .card-button-container {
   margin-top: auto;
   padding-top: 15px;
 }
+
 .card-title {
   background: linear-gradient(45deg, rgb(130, 165, 80), rgb(130, 165, 80));
   -webkit-background-clip: text;
@@ -211,17 +222,27 @@ main {
   font-size: 1.3rem;
   margin-bottom: 15px;
 }
+
 .arabic-text {
-  font-size: 1.1em;
-  line-height: 1.6;
+  font-size: 1.35em;
+  line-height: 2.1;
   margin-bottom: 10px;
-  font-style: initial;
+  font-family: 'Amiri', 'Scheherazade', 'Noto Naskh Arabic', 'Arial', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #1a3d2c;
+  text-align: center;
+  direction: rtl;
+  word-break: break-word;
 }
+
 .transliteration {
   font-style: italic;
   margin-bottom: 10px;
-  color: rgb(0, 0, 0);
+  color: #000 !important;
+  font-weight: 600 !important;
 }
+
 .translation {
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
@@ -255,6 +276,7 @@ main {
   transform: translateY(-5px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
 }
+
 .meaning {
   background: #e8f5e8;
   padding: 15px;
@@ -270,8 +292,15 @@ main {
 }
 
 .meaning-text {
-  color: #2c3e50;
-  line-height: 1.6;
+  color: #205c2c;
+  background: #e8f5e8;
+  border-left: 4px solid #4caf50;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1.08em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .repetition {
@@ -307,20 +336,6 @@ main {
 .special-notes li {
   color: #0c5460;
   margin-bottom: 5px;
-}
-
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 2rem;
-  }
-
-  .arabic-text {
-    font-size: 1.5rem;
-  }
-
-  .card-body {
-    padding: 20px;
-  }
 }
 
 /*.....Style Untuk Jam......*/
@@ -462,27 +477,6 @@ main {
   }
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .prayer-times-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .prayer-header {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
-
-  .clock-section {
-    margin: 0;
-  }
-
-  .time-display {
-    font-size: 36px;
-  }
-}
-
 /* Search Highlight */
 .search-highlight {
   background-color: #ffeb3b;
@@ -513,35 +507,6 @@ main {
   animation: searchPulse 2s ease-in-out;
 }
 
-@media (max-width: 768px) {
-  .prayer-times-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .time-display {
-    font-size: 28px;
-  }
-
-  .prayer-widget {
-    margin: 10px;
-    padding: 15px;
-  }
-
-  .prayer-name {
-    font-size: 14px;
-  }
-
-  .prayer-time {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  .prayer-times-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 /*--- -----*/
 .container_1 {
   max-width: 1200px;
@@ -549,6 +514,7 @@ main {
   position: relative;
   padding: 30px;
 }
+
 .background-text {
   position: absolute;
   top: -20px;
@@ -639,21 +605,6 @@ main {
   font-size: 15px;
   line-height: 1.5;
   margin-top: 15px;
-}
-
-@media (max-width: 768px) {
-  .background-text {
-    font-size: 120px;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .service-card {
-    padding: 20px;
-  }
 }
 
 /* Main Content Styling for Detile.html */
@@ -808,65 +759,6 @@ main {
   font-weight: 600;
 }
 
-/* Responsive Design for Content */
-@media (max-width: 768px) {
-  .content-section {
-    margin: 15px 0;
-    padding: 0 10px;
-  }
-
-  .content-header {
-    padding: 15px;
-  }
-
-  .content-title {
-    font-size: 1.8rem;
-  }
-
-  .content-body {
-    padding: 20px;
-  }
-
-  .content-intro {
-    font-size: 1rem;
-    padding: 12px;
-    margin-bottom: 15px;
-  }
-
-  .rukun-item, .syarat-item {
-    flex-direction: column;
-    text-align: center;
-    padding: 12px;
-  }
-
-  .rukun-number, .syarat-number {
-    margin: 0 0 10px 0;
-    align-self: center;
-  }
-
-  .rukun-content h4, .syarat-content h4 {
-    font-size: 1.1rem;
-  }
-
-  .sub-list {
-    padding-left: 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .content-title {
-    font-size: 1.6rem;
-  }
-
-  .content-body {
-    padding: 15px;
-  }
-
-  .rukun-list, .syarat-list {
-    gap: 10px;
-  }
-}
-
 /* Clean footer styling */
 .footer {
   background: linear-gradient(135deg, rgb(1, 33, 22), rgb(130, 165, 80));
@@ -877,10 +769,6 @@ main {
   z-index: 3;
   overflow: hidden;
 }
-
-
-
-
 
 .footer-content {
   max-width: 1000px;
@@ -970,8 +858,6 @@ main {
   font-size: 0.9rem;
 }
 
-
-
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
@@ -1023,58 +909,6 @@ main {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
-/* Responsive Footer */
-@media (max-width: 768px) {
-  .footer {
-    padding: 30px 0 20px;
-  }
-  
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  
-  .footer-title {
-    font-size: 1.1rem;
-  }
-  
-  .footer-info {
-    padding: 12px;
-  }
-  
-  .footer-social {
-    gap: 12px;
-  }
-  
-  .social-link {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer {
-    padding: 25px 0 15px;
-  }
-  
-  .footer-content {
-    padding: 0 15px;
-  }
-  
-  .footer-text {
-    font-size: 0.8rem;
-  }
-  
-  .footer-quote {
-    font-size: 0.9rem;
-    padding: 12px;
-  }
-}
-
-
-
-
 
 /* Wudhu Steps Styling */
 .wudhu-steps {
@@ -1191,8 +1025,168 @@ main {
   margin-bottom: 0;
 }
 
-/* Responsive Design for Wudhu Steps */
+/* Responsive Design - Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  .prayer-times-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .prayer-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .clock-section {
+    margin: 0;
+  }
+
+  .time-display {
+    font-size: 36px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .content-title {
+    font-size: 1.8rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .background-text {
+    font-size: 150px;
+  }
+}
+
+/* Responsive Design - Mobile (max-width: 768px) */
 @media (max-width: 768px) {
+  .navbar {
+    height: 70px;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .navbar-brand img {
+    height: 35px;
+  }
+
+  .hero-section {
+    height: 40vh;
+  }
+
+  .Teks_header h1 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .container-fluid {
+    padding: 10px;
+  }
+
+  .prayer-times-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .time-display {
+    font-size: 28px;
+  }
+
+  .prayer-widget {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .prayer-name {
+    font-size: 14px;
+  }
+
+  .prayer-time {
+    font-size: 18px;
+  }
+
+  .card-img-container {
+    height: 110px;
+  }
+  .card-img-top {
+    max-height: 80px;
+  }
+  .card-body {
+    padding: 18px 8px 12px 8px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .dzikir-card {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .dzikir-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .arabic-text {
+    font-size: 1rem;
+  }
+
+  .transliteration {
+    font-size: 0.9rem;
+  }
+
+  .meaning {
+    padding: 12px;
+  }
+
+  .repetition {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+
+  .content-section {
+    margin: 15px 0;
+    padding: 0 10px;
+  }
+
+  .content-header {
+    padding: 15px;
+  }
+
+  .content-title {
+    font-size: 1.6rem;
+  }
+
+  .content-body {
+    padding: 20px;
+  }
+
+  .content-intro {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .rukun-item, .syarat-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .rukun-number, .syarat-number {
+    margin: 0 0 10px 0;
+    align-self: center;
+  }
+
+  .rukun-content h4, .syarat-content h4 {
+    font-size: 1.1rem;
+  }
+
   .wudhu-step {
     flex-direction: column;
     text-align: center;
@@ -1215,73 +1209,453 @@ main {
   .wudhu-steps {
     max-height: 50vh;
   }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+  
+  .background-text {
+    font-size: 100px;
+  }
+
+  .footer {
+    padding: 30px 0 20px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-title {
+    font-size: 1.1rem;
+  }
+  
+  .footer-info {
+    padding: 12px;
+  }
+
+  .footer-social {
+    gap: 12px;
+  }
+
+  .social-link {
+    width: 32px;
+    height: 32px;
+}
 }
 
+/* Responsive Design - Small Mobile (max-width: 480px) */
 @media (max-width: 480px) {
+  .navbar {
+    height: 60px;
+    padding: 0.2rem 0.5rem;
+}
+
+  .navbar-brand img {
+    height: 30px;
+}
+
+  .hero-section {
+    height: 35vh;
+}
+
+  .Teks_header h1 {
+    font-size: 1.5rem;
+}
+
+  .container {
+    padding: 10px;
+  }
+
+  .prayer-times-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .time-display {
+    font-size: 24px;
+}
+
+  .prayer-widget {
+    margin: 5px;
+    padding: 10px;
+}
+
+  .card-img-container {
+    height: 80px;
+  }
+  .card-img-top {
+    max-height: 55px;
+  }
+  .card-body {
+    padding: 10px 4px 8px 4px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .dzikir-card {
+    padding: 10px;
+  }
+
+  .dzikir-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .arabic-text {
+    font-size: 0.9rem;
+  }
+
+  .transliteration {
+    font-size: 0.8rem;
+  }
+
+  .meaning {
+    padding: 10px;
+  }
+
+  .repetition {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .content-title {
+    font-size: 1.4rem;
+  }
+
+  .content-body {
+    padding: 15px;
+  }
+
+  .rukun-item, .syarat-item {
+    padding: 10px;
+  }
+
+  .rukun-content h4, .syarat-content h4 {
+    font-size: 1rem;
+  }
+
   .wudhu-step {
     padding: 12px;
   }
-  
+
   .step-content h6 {
     font-size: 1.1rem;
   }
-  
+
   .step-content .arabic-text {
     font-size: 1.1rem;
   }
-  
+
   .wudhu-notes {
     padding: 15px;
   }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .background-text {
+    font-size: 80px;
+  }
+
+  .footer {
+    padding: 25px 0 15px;
+  }
+
+  .footer-content {
+    padding: 0 15px;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+
+  .footer-quote {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
 }
 
-/* RINGKASAN INDEX.HTML: Perkecil jarak antar section dan card */
-.container.mt-3 {
-  margin-top: 16px !important;
-  margin-bottom: 8px !important;
+/* Responsive Design - Extra Small Mobile (max-width: 360px) */
+@media (max-width: 360px) {
+  .navbar {
+    height: 55px;
+  }
+
+  .navbar-brand img {
+    height: 25px;
+  }
+
+  .hero-section {
+    height: 30vh;
+  }
+
+  .Teks_header h1 {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  .time-display {
+    font-size: 20px;
+  }
+
+  .card-img-container {
+    height: 100px;
+    padding: 3px;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .dzikir-card {
+    padding: 8px;
+  }
+
+  .dzikir-card h3 {
+    font-size: 1rem;
+  }
+
+  .arabic-text {
+    font-size: 0.8rem;
+  }
+
+  .transliteration {
+    font-size: 0.7rem;
+  }
+
+  .meaning {
+    padding: 8px;
+  }
+
+  .repetition {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+
+  .content-title {
+    font-size: 1.2rem;
+  }
+
+  .content-body {
+    padding: 12px;
+  }
+
+  .rukun-item, .syarat-item {
+    padding: 8px;
+  }
+
+  .rukun-content h4, .syarat-content h4 {
+    font-size: 0.9rem;
+  }
+
+  .wudhu-step {
+    padding: 10px;
+  }
+
+  .step-content h6 {
+    font-size: 1rem;
+  }
+
+  .step-content .arabic-text {
+    font-size: 1rem;
+  }
+
+  .wudhu-notes {
+    padding: 12px;
+  }
+
+  .service-card {
+    padding: 12px;
+  }
+
+  .background-text {
+    font-size: 60px;
+  }
+
+  .footer {
+    padding: 20px 0 10px;
+  }
+
+  .footer-content {
+    padding: 0 10px;
+  }
+
+  .footer-text {
+    font-size: 0.7rem;
+  }
+
+  .footer-quote {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
 }
 
-.row.justify-content-center.mb-3 {
-  margin-bottom: 8px !important;
+/* Additional responsive fixes for specific elements */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .special-notes h6 {
+    font-size: 1rem;
+  }
+
+  .special-notes li {
+    font-size: 0.9rem;
+  }
+
+  .sub-list {
+    padding-left: 8px;
+  }
+
+  .sub-item {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
 }
 
-.card.text-center {
-  margin-bottom: 8px !important;
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  .special-notes h6 {
+    font-size: 0.9rem;
+  }
+
+  .special-notes li {
+    font-size: 0.85rem;
+  }
+
+  .sub-item {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
 }
 
-.row > [class^="col"] {
-  margin-bottom: 8px !important;
+/* Ensure consistent spacing and layout */
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.card.h-100 {
-  margin-bottom: 0 !important;
-}
-
-.card-header.bg-success {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.card-body {
-  padding-top: 14px;
-  padding-bottom: 14px;
+.col, .col-12, .col-md-6, .col-lg-4, .col-lg-10, .col-xl-8 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (max-width: 768px) {
-  .container.mt-3 {
-    margin-top: 10px !important;
-    margin-bottom: 4px !important;
-  }
-  .row.justify-content-center.mb-3 {
-    margin-bottom: 4px !important;
-  }
-  .card.text-center {
-    margin-bottom: 4px !important;
-  }
-  .row > [class^="col"] {
-    margin-bottom: 4px !important;
+  .col, .col-12, .col-md-6, .col-lg-4, .col-lg-10, .col-xl-8 {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
+
+@media (max-width: 480px) {
+  .col, .col-12, .col-md-6, .col-lg-4, .col-lg-10, .col-xl-8 {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+.skip-link {
+  display: none !important;
+}
+
+/* Animasi fade-in untuk section utama */
+.hero-section, .container, .prayer-widget {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+.hero-section { animation-delay: 0.1s; }
+.prayer-widget { animation-delay: 0.2s; }
+.container { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Card efek hover dan transisi */
+.card, .dzikir-card {
+  transition: box-shadow 0.35s cubic-bezier(.4,2,.3,1), transform 0.35s cubic-bezier(.4,2,.3,1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  border-radius: 16px;
+}
+.card:hover, .dzikir-card:hover {
+  box-shadow: 0 12px 32px rgba(64,88,30,0.18), 0 2px 10px rgba(0,0,0,0.07);
+  transform: translateY(-6px) scale(1.025);
+  z-index: 3;
+}
+
+/* Tombol transisi warna */
+.btn, .btn-primary, .btn-outline-success {
+  transition: background 0.25s, color 0.25s, box-shadow 0.25s;
+  box-shadow: 0 2px 8px rgba(130,165,80,0.08);
+}
+.btn-primary:hover, .btn-outline-success:hover {
+  background: #205c2c !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px rgba(32,92,44,0.18);
+}
+
+/* Judul section/card lebih menonjol */
+.card-title, .main-title, .prayer-title, .footer-title {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(130,165,80,0.08);
+}
+
+/* Spacing antar section/card */
+.container, .prayer-widget {
+  margin-bottom: 32px;
+}
+.row.g-4 > [class^="col"] {
+  margin-bottom: 24px;
+}
+
+/* Responsive fix for fade-in */
+@media (max-width: 768px) {
+  .hero-section, .container, .prayer-widget {
+    animation-delay: 0s !important;
+  }
+}
+
+img, .card-img-top {
+  transition: transform 0.35s cubic-bezier(.4,2,.3,1), box-shadow 0.35s cubic-bezier(.4,2,.3,1);
+}
+.card-img-container:hover img,
+.card:hover .card-img-top,
+.dzikir-card:hover img {
+  transform: scale(1.07) rotate(-1deg);
+  box-shadow: 0 8px 24px rgba(32,92,44,0.13);
+  z-index: 2;
+}
+
 
 
 
